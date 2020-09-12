@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Open Mind</title>
+      <link href="http://webapplayers.com/inspinia_admin-v2.8/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link href="http://webapplayers.com/inspinia_admin-v2.8/css/animate.css" rel="stylesheet">
+      <link href="http://webapplayers.com/inspinia_admin-v2.8/css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://webapplayers.com/inspinia_admin-v2.8/css/plugins/fullcalendar/fullcalendar.print.css">
+      <link rel="stylesheet" href="http://webapplayers.com/inspinia_admin-v2.8/css/plugins/fullcalendar/fullcalendar.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.print.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/all.css" />
+      <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
+   </head>
+   <body class="pace-done">
+      <div class="pace  pace-inactive">
+         <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+         </div>
+         <div class="pace-activity"></div>
+      </div>
+      <div id="wrapper">
+         <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+               <ul class="nav metismenu" id="side-menu">
+                  <li class="nav-header" style="background-image: none;">
+                     <div class="dropdown profile-element">
+                        <img alt="image" class="img-fluid" src="logo2.png">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="http://webapplayers.com/inspinia_admin-v2.8/#">
+                        <span class="block m-t-xs font-bold">João da Silva</span>
+                        <span class="text-muted text-xs block">Desenvolvedor Java <b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                           <li><a class="dropdown-item" href="http://webapplayers.com/inspinia_admin-v2.8/login.html">Logout</a></li>
+                        </ul>
+                     </div>
+                     <div class="logo-element">
+                        Open Mind
+                     </div>
+                  </li>
+                  <li >
+                    <a href="#"> <span class="nav-label">Meu perfil</span></a>
+                  </li>
+                  <li >
+                      <a href="#"> <span class="nav-label">Minhas conexões</span></a>
+                  </li>
+                  <li class="active">
+                    <a href="#"> <span class="nav-label">Meus eventos</span></a>
+                  </li>
+                  <li>
+                      <a href="#"> <span class="nav-label">Minhas conquistas</span></a>
+                  </li>
+                  <li>
+                    <a href="#"> <span class="nav-label">Configurações</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div id="page-wrapper" class="gray-bg" style="min-height: 1720px;">
+            <div class="row wrapper border-bottom white-bg page-heading">
+               <div class="col-lg-10">
+                  <h2>Meus eventos</h2>
+               </div>
+               <div class="col-lg-2">
+               </div>
+            </div>
+            <div class="wrapper wrapper-content">
+                <div class="row animated fadeInDown">
+                   <div class="col-lg-3">
+                      <div class="ibox ">
+                         <div class="ibox-title">
+                            <h5>Eventos principais</h5>
+
+                         </div>
+                         <div class="ibox-content">
+                            <div id="external-events">
+                               <div class="external-event navy-bg">10º encontro UX SP</div>
+                               <div class="external-event navy-bg">Workshop Gestão de Startups</div>
+                            </div>
+                         </div>
+                      </div>
+
+                   </div>
+                   <div class="col-lg-9">
+                      <div class="ibox ">
+                         <div class="ibox-title">
+                            <h5>Calendário </h5>
+                         </div>
+                         <div class="ibox-content">
+                            <div id="calendar"></div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+            <div class="footer">
+
+            </div>
+         </div>
+      </div>
+      <!-- Mainly scripts -->
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/jquery-3.1.1.min.js"></script>
+      <!-- Custom and plugin javascript -->
+      <!-- Sparkline -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/draggable/1.0.0-beta.8/draggable.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+      <script>
+
+          $(document).ready(function() {
+
+                  $('.i-checks').iCheck({
+                      checkboxClass: 'icheckbox_square-green',
+                      radioClass: 'iradio_square-green'
+                  });
+
+              /* initialize the external events
+               -----------------------------------------------------------------*/
+
+
+              $('#external-events div.external-event').each(function() {
+
+                  // store data so the calendar knows to render an event upon drop
+                  $(this).data('event', {
+                      title: $.trim($(this).text()), // use the element's text as the event title
+                      stick: true // maintain when user navigates (see docs on the renderEvent method)
+                  });
+
+              });
+
+
+              /* initialize the calendar
+               -----------------------------------------------------------------*/
+              var date = new Date();
+              var d = date.getDate();
+              var m = date.getMonth();
+              var y = date.getFullYear();
+
+              $('#calendar').fullCalendar({
+                  header: {
+                      left: 'prev,next today',
+                      center: 'title',
+                      right: 'month,agendaWeek,agendaDay'
+                  },
+                  editable: true,
+                  droppable: true, // this allows things to be dropped onto the calendar
+                  drop: function() {
+                      // is the "remove after drop" checkbox checked?
+                      if ($('#drop-remove').is(':checked')) {
+                          // if so, remove the element from the "Draggable Events" list
+                          $(this).remove();
+                      }
+                  },
+                  events: [
+                      {
+                          title: '10º encontro UX Brasil',
+                          start: new Date(y, m, 1)
+                      },
+                      {
+                          title: 'Vídeo novo',
+                          start: new Date(y, m, d-5),
+                          end: new Date(y, m, d-2)
+                      },
+                      {
+                          id: 999,
+                          title: 'Workshop',
+                          start: new Date(y, m, d-3, 16, 0),
+                          allDay: false
+                      },
+                      {
+                          id: 999,
+                          title: 'Workshop',
+                          start: new Date(y, m, d+4, 16, 0),
+                          allDay: false
+                      },
+
+                      {
+                          title: 'Workshop',
+                          start: new Date(y, m, d+1, 19, 0),
+                          end: new Date(y, m, d+1, 22, 30),
+                          allDay: false
+                      },
+                      {
+                          title: 'Vídeo',
+                          start: new Date(y, m, 28),
+                          end: new Date(y, m, 29),
+                          url: 'http://google.com/'
+                      }
+                  ]
+              });
+
+
+          });
+
+      </script>
+   </body>
+</html>

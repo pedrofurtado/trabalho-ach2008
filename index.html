@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Open Mind</title>
+      <link href="http://webapplayers.com/inspinia_admin-v2.8/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link href="http://webapplayers.com/inspinia_admin-v2.8/css/animate.css" rel="stylesheet">
+      <link href="http://webapplayers.com/inspinia_admin-v2.8/css/style.css" rel="stylesheet">
+      <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
+   </head>
+   <body class="pace-done">
+      <div class="pace  pace-inactive">
+         <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+         </div>
+         <div class="pace-activity"></div>
+      </div>
+      <div id="wrapper">
+         <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+               <ul class="nav metismenu" id="side-menu">
+                  <li class="nav-header" style="background-image: none;">
+                     <div class="dropdown profile-element">
+                        <img alt="image" class="img-fluid" src="logo2.png">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="http://webapplayers.com/inspinia_admin-v2.8/#">
+                        <span class="block m-t-xs font-bold">João da Silva</span>
+                        <span class="text-muted text-xs block">Desenvolvedor Java <b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                           <li><a class="dropdown-item" href="http://webapplayers.com/inspinia_admin-v2.8/login.html">Logout</a></li>
+                        </ul>
+                     </div>
+                     <div class="logo-element">
+                        Open Mind
+                     </div>
+                  </li>
+                  <li class="active">
+                    <a href="#"> <span class="nav-label">Meu perfil</span></a>
+                  </li>
+                  <li>
+                      <a href="#"> <span class="nav-label">Minhas conexões</span></a>
+                  </li>
+                  <li>
+                    <a href="#"> <span class="nav-label">Meus eventos</span></a>
+                  </li>
+                  <li>
+                      <a href="#"> <span class="nav-label">Minhas conquistas</span></a>
+                  </li>
+                  <li>
+                    <a href="#"> <span class="nav-label">Configurações</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div id="page-wrapper" class="gray-bg" style="min-height: 1720px;">
+            <div class="row wrapper border-bottom white-bg page-heading">
+               <div class="col-lg-10">
+                  <h2>Meu perfil</h2>
+               </div>
+               <div class="col-lg-2">
+               </div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+               <div class="row m-b-lg m-t-lg">
+                  <div class="col-md-6">
+                     <div class="profile-image">
+                        <img src="http://webapplayers.com/inspinia_admin-v2.8/img/a4.jpg" class="rounded-circle circle-border m-b-md" alt="profile">
+                     </div>
+                     <div class="profile-info">
+                        <div class="">
+                           <div>
+                              <h2 class="no-margins">
+                                 João da Silva
+                              </h2>
+                              <h4>Desenvolvedor Java Sênior na Empresa XYZ</h4>
+                              <small>
+                              Desenvolvedor há mais de 20 anos, com enfoque em aplicações Desktop.
+                              </small>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <table class="table small m-b-xs">
+                        <tbody>
+                           <tr>
+                              <td>
+                                 <strong>142</strong> Workshops
+                              </td>
+                              <td>
+                                 <strong>22</strong> Seguidores
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <strong>61</strong> Comentários
+                              </td>
+                              <td>
+                                 <strong>54</strong> Artigos
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <strong>154</strong> Vídeos
+                              </td>
+                              <td>
+                                 <strong>32</strong> Conexões
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="col-md-3">
+                     <small>Total de visualizações dos workshops</small>
+                     <h2 class="no-margins">206 480</h2>
+                     <div id="sparkline1">
+                        <canvas style="display: inline-block; width: 369.5px; height: 50px; vertical-align: top;" width="369" height="50"></canvas>
+                     </div>
+                  </div>
+               </div>
+               <div class="wrapper wrapper-content animated fadeInRight">
+                 <h2>Profissionais que trabalham nas suas áreas de interesse</h2>
+                <div class="row">
+                   <div class="col-lg-3">
+                      <div class="contact-box center-version">
+                         <a href="profile.html">
+                            <img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a2.jpg">
+                            <h3 class="m-b-xs"><strong>Jorge Bento</strong></h3>
+                            <div class="font-bold">Designer Gráfico</div>
+                            <address class="m-t-md">
+                               <strong>Globo.com</strong><br>
+                               Experiência em React e Angular.<br>
+                            </address>
+                         </a>
+                         <div class="contact-box-footer">
+                            <div class="m-t-xs btn-group">
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Ligar </a>
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Conectar-se</a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                      <div class="contact-box center-version">
+                         <a href="profile.html">
+                            <img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a1.jpg">
+                            <h3 class="m-b-xs"><strong>Alex Rômulo</strong></h3>
+                            <div class="font-bold">CEO</div>
+                            <address class="m-t-md">
+                               <strong>Salesforce</strong><br>
+                               Consultoria digital com ênfase em ERP e CRM<br>
+                            </address>
+                         </a>
+                         <div class="contact-box-footer">
+                            <div class="m-t-xs btn-group">
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Ligar </a>
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Conectar-se</a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                      <div class="contact-box center-version">
+                         <a href="profile.html">
+                            <img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a3.jpg">
+                            <h3 class="m-b-xs"><strong>Mônica Alves</strong></h3>
+                            <div class="font-bold">Scrum Master</div>
+                            <address class="m-t-md">
+                               <strong>TOTVS</strong><br>
+                            </address>
+                         </a>
+                         <div class="contact-box-footer">
+                            <div class="m-t-xs btn-group">
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Ligar </a>
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Conectar-se</a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                      <div class="contact-box center-version">
+                         <a href="profile.html">
+                            <img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a4.jpg">
+                            <h3 class="m-b-xs"><strong>Marcos Costa</strong></h3>
+                            <div class="font-bold">Diretor de TI</div>
+                            <address class="m-t-md">
+                               <strong>Itaú</strong><br>
+                            </address>
+                         </a>
+                         <div class="contact-box-footer">
+                            <div class="m-t-xs btn-group">
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Ligar </a>
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                               <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Conectar-se</a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+               <div class="row">
+                  <div class="col-lg-3">
+                     <div class="ibox">
+                        <div class="ibox-content">
+                           <h3>Interesses</h3>
+                           <label style="margin-right: 5px; font-size: 13px;" class="label label-success">Ecommerce</label>
+                           <label style="margin-right: 5px; font-size: 13px;" class="label label-danger">Microsserviços</label>
+                           <label style="margin-right: 5px; font-size: 13px;" class="label label-success">Gestão de equipes</label>
+                           <label style="margin-right: 5px; font-size: 13px;" class="label label-info">Scrum</label>
+                           <label style="margin-right: 5px; font-size: 13px;" class="label label-primary">Trabalho remoto</label>
+                           <label style="margin-right: 5px; font-size: 13px;" class="label label-default">Inovação</label>
+                           <label style="margin-right: 5px; font-size: 13px;" class="label label-warning">Visão estratégica</label>
+                        </div>
+                     </div>
+                     <div class="ibox">
+                        <div class="ibox-content">
+                           <h3>Conexões</h3>
+                           <div class="user-friends">
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a3.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a1.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a2.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a4.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a5.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a6.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a7.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a8.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a2.jpg"></a>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/"><img alt="image" class="rounded-circle" src="http://webapplayers.com/inspinia_admin-v2.8/img/a1.jpg"></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ibox">
+                        <div class="ibox-content">
+                           <h3>Próximos workshops</h3>
+                           <ul class="list-unstyled file-list">
+                             <li>15/09 - Inovação em TI</li>
+                             <li>20/10 - Gestão de equipes remotas</li>
+                             <li>25/10 - Estudo de caso de UX</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="ibox">
+                        <div class="ibox-content">
+                           <h3>Conquistas</h3>
+                           <span style="font-size: 13px; margin-bottom: 5px;" class="badge badge-primary"><i class="fa fa-trophy" style="margin-right: 5px;"></i>Palestrante</span>
+                           <span style="font-size: 13px; margin-bottom: 5px;" class="badge badge-primary"><i class="fa fa-trophy" style="margin-right: 5px;"></i>+50 vídeos</span>
+                           <span style="font-size: 13px; margin-bottom: 5px;" class="badge badge-primary"><i class="fa fa-trophy" style="margin-right: 5px;"></i>+10 conexões</span>
+                           <span style="font-size: 13px; margin-bottom: 5px;" class="badge badge-primary"><i class="fa fa-trophy" style="margin-right: 5px;"></i>Organizador de eventos</span>
+                           <span style="font-size: 13px; margin-bottom: 5px;" class="badge badge-primary"><i class="fa fa-trophy" style="margin-right: 5px;"></i>Premium</span>
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-5">
+                      <div class="ibox ">
+                          <div class="ibox-title">
+                             <h5>Como aumentamos em 15% o faturamento do site através da melhoria de UX</h5>
+                          </div>
+                          <div class="ibox-content">
+                                <iframe src="http://www.youtube.com/embed/bwj2s_5e12U" frameborder="0" allowfullscreen="" data-aspectratio="0.8211764705882353" style="width: 100%; height: 600px;"></iframe>
+                          </div>
+                       </div>
+                     <div class="social-feed-box">
+                        <div class="social-avatar">
+                           <a href="http://webapplayers.com/inspinia_admin-v2.8/" class="float-left">
+                           <img alt="image" src="http://webapplayers.com/inspinia_admin-v2.8/img/a1.jpg">
+                           </a>
+                           <div class="media-body">
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/#">
+                              William Matos
+                              </a>
+                              <small class="text-muted">Domingo, 16:21 - 12.06.2014</small>
+                           </div>
+                        </div>
+                        <div class="social-body">
+                           <p> Começa amanhã o 10º workshops de UX em Ecommerce! Venham participar!
+                           </p>
+                           <div class="btn-group">
+                              <button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> Curtir</button>
+                              <button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> Comentar</button>
+                              <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Compartilhar</button>
+                           </div>
+                        </div>
+                        <div class="social-footer">
+                           <div class="social-comment">
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/" class="float-left">
+                              <img alt="image" src="http://webapplayers.com/inspinia_admin-v2.8/img/a1.jpg">
+                              </a>
+                              <div class="media-body">
+                                 <a href="http://webapplayers.com/inspinia_admin-v2.8/#">
+                                 André Rocha
+                                 </a>
+                                 As inscrições começam hoje.
+                                 <br>
+                                 <a href="http://webapplayers.com/inspinia_admin-v2.8/#" class="small"><i class="fa fa-thumbs-up"></i> 26 curtiram</a> -
+                                 <small class="text-muted">12.06.2014</small>
+                              </div>
+                           </div>
+                           <div class="social-comment">
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/" class="float-left">
+                              <img alt="image" src="http://webapplayers.com/inspinia_admin-v2.8/img/a2.jpg">
+                              </a>
+                              <div class="media-body">
+                                 <a href="http://webapplayers.com/inspinia_admin-v2.8/#">
+                                 José Lopes
+                                 </a>
+                                 Obrigado!
+                                 <br>
+                                 <a href="http://webapplayers.com/inspinia_admin-v2.8/#" class="small"><i class="fa fa-thumbs-up"></i> 11 curtiram</a> -
+                                 <small class="text-muted">10.07.2014</small>
+                              </div>
+                           </div>
+                           <div class="social-comment">
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/" class="float-left">
+                              <img alt="image" src="http://webapplayers.com/inspinia_admin-v2.8/img/a3.jpg">
+                              </a>
+                              <div class="media-body">
+                                 <textarea class="form-control" placeholder="Escreva aqui o seu comentário..."></textarea>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="social-feed-box">
+                        <div class="social-avatar">
+                           <a href="http://webapplayers.com/inspinia_admin-v2.8/" class="float-left">
+                           <img alt="image" src="http://webapplayers.com/inspinia_admin-v2.8/img/a6.jpg">
+                           </a>
+                           <div class="media-body">
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/#">
+                              José Lopes
+                              </a>
+                              <small class="text-muted">Segunda-Feira 4:21 - 12.06.2014</small>
+                           </div>
+                        </div>
+                        <div class="social-body">
+                           <img src="http://webapplayers.com/inspinia_admin-v2.8/img/gallery/3.jpg" class="img-fluid">
+                           <div class="btn-group">
+                              <button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> Curtir</button>
+                              <button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> Comentar</button>
+                              <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Compartilhar</button>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="col-lg-4 m-b-lg">
+                     <div id="vertical-timeline" class="vertical-container light-timeline no-margins">
+                        <div class="vertical-timeline-block">
+                           <div class="vertical-timeline-icon navy-bg">
+                              <i class="fa fa-briefcase"></i>
+                           </div>
+                           <div class="vertical-timeline-content">
+                              <h2>10º Workshop Scrum aplicado à Design</h2>
+                              <p>Conferência acontecerá no Auditório Ipiranga, em São Paulo/SP.
+                              </p>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/#" class="btn btn-sm btn-primary"> Saber mais</a>
+                              <span class="vertical-date">
+                              Segunda-Feira <br>
+                              <small>Dez 24</small>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="vertical-timeline-block">
+                           <div class="vertical-timeline-icon blue-bg">
+                              <i class="fa fa-file-text"></i>
+                           </div>
+                           <div class="vertical-timeline-content">
+                              <h2>Novas conexões</h2>
+                              <p>Aproveite e adicione novas conexões.</p>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/#" class="btn btn-sm btn-success"> Ver conexões</a>
+                              <span class="vertical-date">
+                              Segunda-Feira <br>
+                              <small>Ago 18</small>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="vertical-timeline-block">
+                           <div class="vertical-timeline-icon lazur-bg">
+                              <i class="fa fa-coffee"></i>
+                           </div>
+                           <div class="vertical-timeline-content">
+                              <h2>Seus eventos</h2>
+                              <p>Você pode visualizar seus eventos em seu calendário pessoal. Confira! </p>
+                              <a href="http://webapplayers.com/inspinia_admin-v2.8/#" class="btn btn-sm btn-info">Ir para calendário</a>
+                              <span class="vertical-date"> Ontem <br><small>Set 23</small></span>
+                           </div>
+                        </div>
+                        <div class="vertical-timeline-block">
+                           <div class="vertical-timeline-icon yellow-bg">
+                              <i class="fa fa-phone"></i>
+                           </div>
+                           <div class="vertical-timeline-content">
+                              <h2>Interesses</h2>
+                              <p>Você possui novos interesses.</p>
+                              <span class="vertical-date">Ontem <br><small>Jan 23</small></span>
+                           </div>
+                        </div>
+                        <div class="vertical-timeline-block">
+                           <div class="vertical-timeline-icon navy-bg">
+                              <i class="fa fa-comments"></i>
+                           </div>
+                           <div class="vertical-timeline-content">
+                              <h2>Conquistas</h2>
+                              <p>Conforme você utiliza a plataforma, novas conquistas vão sendo liberadas. </p>
+                              <span class="vertical-date">Ontem <br><small>Fev 23</small></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer">
+
+            </div>
+         </div>
+      </div>
+      <!-- Mainly scripts -->
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/jquery-3.1.1.min.js"></script>
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/popper.min.js"></script>
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/bootstrap.js"></script>
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+      <!-- Custom and plugin javascript -->
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/inspinia.js"></script>
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/plugins/pace/pace.min.js"></script>
+      <!-- Sparkline -->
+      <script src="http://webapplayers.com/inspinia_admin-v2.8/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+      <script>
+         $(document).ready(function() {
+
+
+             $("#sparkline1").sparkline([34, 43, 43, 35, 44, 32, 44, 48], {
+                 type: 'line',
+                 width: '100%',
+                 height: '50',
+                 lineColor: '#1ab394',
+                 fillColor: "transparent"
+             });
+
+
+         });
+      </script>
+      <script>
+         // Config box
+
+         // Enable/disable fixed top navbar
+         $('#fixednavbar').click(function (){
+             if ($('#fixednavbar').is(':checked')){
+                 $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+                 $("body").removeClass('boxed-layout');
+                 $("body").addClass('fixed-nav');
+                 $('#boxedlayout').prop('checked', false);
+
+                 if (localStorageSupport){
+                     localStorage.setItem("boxedlayout",'off');
+                 }
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixednavbar",'on');
+                 }
+             } else{
+                 $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+                 $("body").removeClass('fixed-nav');
+                 $("body").removeClass('fixed-nav-basic');
+                 $('#fixednavbar2').prop('checked', false);
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixednavbar",'off');
+                 }
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixednavbar2",'off');
+                 }
+             }
+         });
+
+         // Enable/disable fixed top navbar
+         $('#fixednavbar2').click(function (){
+             if ($('#fixednavbar2').is(':checked')){
+                 $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+                 $("body").removeClass('boxed-layout');
+                 $("body").addClass('fixed-nav').addClass('fixed-nav-basic');
+                 $('#boxedlayout').prop('checked', false);
+
+                 if (localStorageSupport){
+                     localStorage.setItem("boxedlayout",'off');
+                 }
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixednavbar2",'on');
+                 }
+             } else {
+                 $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+                 $("body").removeClass('fixed-nav').removeClass('fixed-nav-basic');
+                 $('#fixednavbar').prop('checked', false);
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixednavbar2",'off');
+                 }
+                 if (localStorageSupport){
+                     localStorage.setItem("fixednavbar",'off');
+                 }
+             }
+         });
+
+         // Enable/disable fixed sidebar
+         $('#fixedsidebar').click(function (){
+             if ($('#fixedsidebar').is(':checked')){
+                 $("body").addClass('fixed-sidebar');
+                 $('.sidebar-collapse').slimScroll({
+                     height: '100%',
+                     railOpacity: 0.9
+                 });
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixedsidebar",'on');
+                 }
+             } else{
+                 $('.sidebar-collapse').slimscroll({destroy: true});
+                 $('.sidebar-collapse').attr('style', '');
+                 $("body").removeClass('fixed-sidebar');
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixedsidebar",'off');
+                 }
+             }
+         });
+
+         // Enable/disable collapse menu
+         $('#collapsemenu').click(function (){
+             if ($('#collapsemenu').is(':checked')){
+                 $("body").addClass('mini-navbar');
+                 SmoothlyMenu();
+
+                 if (localStorageSupport){
+                     localStorage.setItem("collapse_menu",'on');
+                 }
+
+             } else{
+                 $("body").removeClass('mini-navbar');
+                 SmoothlyMenu();
+
+                 if (localStorageSupport){
+                     localStorage.setItem("collapse_menu",'off');
+                 }
+             }
+         });
+
+         // Enable/disable boxed layout
+         $('#boxedlayout').click(function (){
+             if ($('#boxedlayout').is(':checked')){
+                 $("body").addClass('boxed-layout');
+                 $('#fixednavbar').prop('checked', false);
+                 $('#fixednavbar2').prop('checked', false);
+                 $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+                 $("body").removeClass('fixed-nav');
+                 $("body").removeClass('fixed-nav-basic');
+                 $(".footer").removeClass('fixed');
+                 $('#fixedfooter').prop('checked', false);
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixednavbar",'off');
+                 }
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixednavbar2",'off');
+                 }
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixedfooter",'off');
+                 }
+
+
+                 if (localStorageSupport){
+                     localStorage.setItem("boxedlayout",'on');
+                 }
+             } else{
+                 $("body").removeClass('boxed-layout');
+
+                 if (localStorageSupport){
+                     localStorage.setItem("boxedlayout",'off');
+                 }
+             }
+         });
+
+         // Enable/disable fixed footer
+         $('#fixedfooter').click(function (){
+             if ($('#fixedfooter').is(':checked')){
+                 $('#boxedlayout').prop('checked', false);
+                 $("body").removeClass('boxed-layout');
+                 $(".footer").addClass('fixed');
+
+                 if (localStorageSupport){
+                     localStorage.setItem("boxedlayout",'off');
+                 }
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixedfooter",'on');
+                 }
+             } else{
+                 $(".footer").removeClass('fixed');
+
+                 if (localStorageSupport){
+                     localStorage.setItem("fixedfooter",'off');
+                 }
+             }
+         });
+
+         // SKIN Select
+         $('.spin-icon').click(function (){
+             $(".theme-config-box").toggleClass("show");
+         });
+
+         // Default skin
+         $('.s-skin-0').click(function (){
+             $("body").removeClass("skin-1");
+             $("body").removeClass("skin-2");
+             $("body").removeClass("skin-3");
+         });
+
+         // Blue skin
+         $('.s-skin-1').click(function (){
+             $("body").removeClass("skin-2");
+             $("body").removeClass("skin-3");
+             $("body").addClass("skin-1");
+         });
+
+         // Inspinia ultra skin
+         $('.s-skin-2').click(function (){
+             $("body").removeClass("skin-1");
+             $("body").removeClass("skin-3");
+             $("body").addClass("skin-2");
+         });
+
+         // Yellow skin
+         $('.s-skin-3').click(function (){
+             $("body").removeClass("skin-1");
+             $("body").removeClass("skin-2");
+             $("body").addClass("skin-3");
+         });
+
+         if (localStorageSupport){
+             var collapse = localStorage.getItem("collapse_menu");
+             var fixedsidebar = localStorage.getItem("fixedsidebar");
+             var fixednavbar = localStorage.getItem("fixednavbar");
+             var fixednavbar2 = localStorage.getItem("fixednavbar2");
+             var boxedlayout = localStorage.getItem("boxedlayout");
+             var fixedfooter = localStorage.getItem("fixedfooter");
+
+             if (collapse == 'on'){
+                 $('#collapsemenu').prop('checked','checked')
+             }
+             if (fixedsidebar == 'on'){
+                 $('#fixedsidebar').prop('checked','checked')
+             }
+             if (fixednavbar == 'on'){
+                 $('#fixednavbar').prop('checked','checked')
+             }
+             if (fixednavbar2 == 'on'){
+                 $('#fixednavbar2').prop('checked','checked')
+             }
+             if (boxedlayout == 'on'){
+                 $('#boxedlayout').prop('checked','checked')
+             }
+             if (fixedfooter == 'on') {
+                 $('#fixedfooter').prop('checked','checked')
+             }
+         }
+      </script>
+   </body>
+</html>
